@@ -7,3 +7,8 @@
 #model.foo(5)
 import library as lib
 print('main module')
+if __name__ == "__Main__":
+    print('lib')
+else:
+    print('jast inmport\
+    lets test')

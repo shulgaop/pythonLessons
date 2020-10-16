@@ -3,9 +3,10 @@ def main():
     windowsize(600, 500)
     paint_house(200 , 100, 200, 400)
     run()
-def paint_house(x, y, width, height):
-    """paint house
-       (x, y) -- baise(start) point is left down
+    
+    def paint_house(x, y, width, height):
+    
+    """paint house (x, y) -- baise(start) point is left down
     """
     paint_walls(x, y, width, height // 2)
     paint_roof(x, y, widht, height // 2)
