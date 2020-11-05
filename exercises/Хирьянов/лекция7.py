@@ -15,3 +15,14 @@ b.name = 'Зорька'
 b.age = 1
 a.show()
 b.show()
+
+class Student:
+    def __init__(self, name, age):
+    self.name = name
+    selg.age = age
+    print(name, '+')
+a=Student('Вася', 17)
+a.tail = 'Физика'
+
+
+
