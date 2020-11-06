@@ -36,19 +36,20 @@ def canvas_click_handler(event):
     print('HI x = ', event.x, 'y=', event.y)
 
 def tick():
-    ball.move()
-    ball.show()
+    for ball in balls:
+        ball.move()
+        ball.show()
     root.after(50, tick)
 
 
 def main():
-    global root, canvas, ball
+    global root, canvas, balls
     root = tk.Tk()
     root.geometry(str(WIDTH) + "x" + str(HEIGHT))
     canvas = tk.Canvas(root)
     canvas.pack(anchor="nw", fill=tk.BOTH)
     canvas.bind('<Button-1>', canvas_click_handler)
-    ball = Ball()
+    balls = [Ball() for i in range(5)]
     tick()
     root.mainloop()
 if __name__ == "__main__":
